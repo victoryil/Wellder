@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/lblDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jun  11"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/chatR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_chat_right"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblDate">
+
+        <TextView
+            android:id="@+id/lblMessageR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:fontFamily="@font/roboto_medium"
+            android:maxWidth="@dimen/dimen_200"
+            android:textSize="@dimen/txtDimen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ic_check_r"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Que tal??" />
+
+        <ImageView
+            android:id="@+id/ic_check_r"
+            android:layout_width="20dp"
+            android:layout_height="13dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/lblMessageR"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/lblMessageR"
+            app:srcCompat="@drawable/ic_double_check_blue" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/lblTimeR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="10sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/chatR"
+        app:layout_constraintTop_toBottomOf="@+id/chatR"
+        tools:text="22:33" />
+
+    <TextView
+        android:id="@+id/lblTimeR2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="10sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/chatR"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewR"
+        tools:text="22:33" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/chatL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_chat_left"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblDate">
+
+        <TextView
+            android:id="@+id/lblMessageL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:maxWidth="@dimen/dimen_200"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtDimen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ic_check_l"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="Que feo jajaja! enfin.." />
+
+        <ImageView
+            android:id="@+id/ic_check_l"
+            android:layout_width="20dp"
+            android:layout_height="13dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/lblMessageL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/lblMessageL"
+            app:srcCompat="@drawable/ic_double_check_white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/lblTimeL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/chatL"
+        app:layout_constraintTop_toBottomOf="@+id/chatL"
+        tools:text="22:51"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/lblTimeL2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/chatL"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewL"
+        tools:text="22:51" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewL"
+        android:layout_width="@dimen/dimen_200"
+        android:layout_height="@dimen/dimen_200"
+        android:layout_marginHorizontal="@dimen/dimen_8"
+        android:layout_marginVertical="@dimen/dimen_5"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:cardCornerRadius="@dimen/dimen_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic">
+
+        <ImageView
+            android:id="@+id/imgL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/lblTimeR"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/chatR" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewR"
+        android:layout_width="@dimen/dimen_200"
+        android:layout_height="@dimen/dimen_200"
+        android:layout_marginHorizontal="@dimen/dimen_8"
+        android:layout_marginVertical="@dimen/dimen_5"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:cardCornerRadius="@dimen/dimen_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic">
+
+        <ImageView
+            android:id="@+id/imgR"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/lblTimeR"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/chatR" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

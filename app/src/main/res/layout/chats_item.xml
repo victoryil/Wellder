@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="0dp"
+    android:layout_marginTop="@dimen/dimen_10">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rootCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/dimen_10"
+        android:background="@drawable/bg_chat_item"
+        android:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/root_main"
+        app:layout_constraintEnd_toEndOf="@id/root_main"
+        app:layout_constraintStart_toEndOf="@id/root_main"
+        app:layout_constraintTop_toTopOf="@id/root_main">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="@dimen/dimen_64"
+            android:layout_height="@dimen/dimen_64"
+            android:layout_marginVertical="@dimen/dimen_10"
+            android:layout_marginStart="24dp"
+            app:civ_border_color="@color/wellder_card_grey"
+            app:civ_border_width="@dimen/dimen_3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_user" />
+
+        <TextView
+            android:id="@+id/lbl_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:ellipsize="end"
+            android:gravity="center"
+            tools:text="victoryil"
+            android:maxWidth="@dimen/dimen_200"
+            android:singleLine="true"
+            android:textColor="@color/wellder_dark_primary"
+            android:textSize="@dimen/TEXT_20"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imgProfile"
+            app:layout_constraintTop_toTopOf="@+id/imgProfile" />
+
+        <TextView
+            android:id="@+id/lblLastMessage"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/lbl_name"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_name"
+            tools:text="Buenas tardes que hacias mañana que no me acuerdo y a ver si nos vemos picha" />
+
+        <TextView
+            android:id="@+id/lblLastTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/lbl_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/lbl_name"
+            tools:text="10:22" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/notification_bubble"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:visibility="invisible"
+        android:background="@drawable/bg_notification_bubble"
+        app:layout_constraintBottom_toBottomOf="@+id/rootCard"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rootCard" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/lbl_notification_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="@color/wellder_card_grey"
+        app:layout_constraintBottom_toBottomOf="@+id/notification_bubble"
+        app:layout_constraintEnd_toEndOf="@+id/notification_bubble"
+        app:layout_constraintStart_toStartOf="@+id/notification_bubble"
+        app:layout_constraintTop_toTopOf="@+id/notification_bubble"
+        tools:visibility="gone" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

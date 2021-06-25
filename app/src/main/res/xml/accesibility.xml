@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:key="preferencia">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="TTS"
+        android:title="@string/TITLE_SETTING_ACCESIBILITY_VOICEREADER"
+        android:icon="@drawable/ic_speaker"
+        android:summary="@string/DESCRIPTION_SETTING_ACCESIBILITY_VOICEREADER"/>
+    <SeekBarPreference android:key="FONTSIZE"
+        android:title="@string/TITLE_SETTING_ACCESIBILITY_TEXTSIZE"
+        android:defaultValue="18"
+        app:showSeekBarValue="true"
+        android:icon="@drawable/ic_letter"
+        android:max="32"
+        app:min="12"/>
+</PreferenceScreen>

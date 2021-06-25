@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:key="root">
+    <Preference
+        android:icon="@drawable/ic_user"
+        android:key="@string/profileSettings"
+        android:summary="@string/DESCRIPTION_SETTING_PROFILE"
+        android:title="name"
+        app:allowDividerAbove="true" />
+    <PreferenceCategory android:title="General">
+        <Preference
+            android:icon="@drawable/ic_accessibility"
+            android:key="@string/accesibilityBtn"
+            android:summary="@string/DESCRIPTION_SETTING_ACCESIBILITY"
+            android:title="@string/TITLE_SETTING_ACCESIBILITY" />
+        <ListPreference
+            android:icon="@drawable/ic_theme"
+            android:entries="@array/themes"
+            android:entryValues="@array/themes"
+            app:defaultValue="classic"
+            android:key="THEME"
+            android:title="@string/TITLE_SETTING_THEME"
+            android:summary="@string/DESCRIPTION_SETTING_THEME"/>
+        <Preference
+            android:icon="@drawable/ic_person_block"
+            android:key="BLOCKPEOPLE"
+            android:summary="@string/DESCRIPTION_SETTING_BLOCK"
+            android:title="@string/TITLE_SETTING_BLOCK" />
+        <Preference
+            android:icon="@drawable/ic_logout"
+            android:key="LOGOUT"
+            android:title="@string/TITLE_LOGOUT" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

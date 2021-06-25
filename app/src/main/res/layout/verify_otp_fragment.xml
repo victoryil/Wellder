@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.otp.SendOTPFragment">
+
+    <ImageView
+        android:id="@+id/ic_SentOk"
+        android:layout_width="@dimen/dimen_128"
+        android:layout_height="@dimen/dimen_128"
+        android:layout_marginTop="@dimen/dimen_64"
+        android:src="@drawable/ic_sentok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:text="@string/BTN_VERIFY"
+        android:textColor="@color/black"
+        android:textSize="@dimen/TEXT_24"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ic_SentOk"
+        app:layout_constraintStart_toStartOf="@+id/ic_SentOk"
+        app:layout_constraintTop_toBottomOf="@+id/ic_SentOk" />
+
+    <TextView
+        android:id="@+id/lblDesc"
+        android:layout_width="@dimen/dimen_300"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:text="@string/DESCRIPTION_VERIFY_CODE"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/ic_SentOk"
+        app:layout_constraintStart_toStartOf="@+id/ic_SentOk"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitle" />
+
+    <TextView
+        android:id="@+id/lblEnterPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_75"
+        android:text="@string/TITLE_VERIFY_CODE"
+        app:layout_constraintEnd_toEndOf="@+id/lblDesc"
+        app:layout_constraintStart_toStartOf="@+id/lblDesc"
+        app:layout_constraintTop_toBottomOf="@+id/lblDesc" />
+
+    <EditText
+        android:id="@+id/edPN1"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/edPN2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblEnterPhone" />
+
+    <EditText
+        android:id="@+id/edPN2"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/edPN3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edPN1"
+        app:layout_constraintTop_toBottomOf="@+id/lblEnterPhone" />
+
+    <EditText
+        android:id="@+id/edPN3"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/edPN4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edPN2"
+        app:layout_constraintTop_toBottomOf="@+id/lblEnterPhone" />
+
+    <EditText
+        android:id="@+id/edPN4"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/edPN5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edPN3"
+        app:layout_constraintTop_toBottomOf="@+id/lblEnterPhone" />
+
+    <EditText
+        android:id="@+id/edPN5"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/edPN6"
+        app:layout_constraintStart_toEndOf="@+id/edPN4"
+        app:layout_constraintTop_toBottomOf="@+id/lblEnterPhone" />
+
+    <EditText
+        android:id="@+id/edPN6"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLength="1"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edPN5"
+        app:layout_constraintTop_toBottomOf="@+id/lblEnterPhone" />
+
+    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_32"
+        android:text="@string/BTN_VERIFY"
+        android:background="@drawable/btn_verify"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edPN1" />
+
+    <TextView
+        android:id="@+id/lblResendTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:text="@string/TITLE_CODE_NOTFOUND"
+        app:layout_constraintEnd_toStartOf="@+id/lblResendClickable"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSend" />
+
+    <TextView
+        android:id="@+id/lblResendClickable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:clickable="true"
+        android:text="@string/TITLE_CODE_RESEND"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/lblResendTitle"
+        app:layout_constraintTop_toBottomOf="@+id/btnSend" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

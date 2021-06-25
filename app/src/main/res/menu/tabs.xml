@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mnu_chats"
+        android:title="@string/TAB_CHAT"
+        android:icon="@drawable/ic_letter"/>
+
+    <item
+        android:id="@+id/mnu_friends"
+        android:title="@string/TAB_FRIENDS"
+        android:icon="@drawable/ic_person"/>
+
+
+</menu>

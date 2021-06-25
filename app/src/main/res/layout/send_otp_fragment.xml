@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.otp.SendOTPFragment">
+
+    <ImageView
+        android:id="@+id/ic_SentOk"
+        android:layout_width="@dimen/dimen_128"
+        android:layout_height="@dimen/dimen_128"
+        android:layout_marginTop="@dimen/dimen_64"
+        android:src="@drawable/ic_sent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:text="@string/TITLE_VERIFY"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/TEXT_24"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ic_SentOk"
+        app:layout_constraintStart_toStartOf="@+id/ic_SentOk"
+        app:layout_constraintTop_toBottomOf="@+id/ic_SentOk" />
+
+    <TextView
+        android:id="@+id/lblDesc"
+        android:layout_width="@dimen/dimen_300"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:text="@string/DESCRIPTION_VERIFY"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/ic_SentOk"
+        app:layout_constraintStart_toStartOf="@+id/ic_SentOk"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitle" />
+
+    <TextView
+        android:id="@+id/lblEnterPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="@string/TITLE_VERIFY_PHONE"
+        app:layout_constraintEnd_toEndOf="@+id/lblDesc"
+        app:layout_constraintStart_toStartOf="@+id/lblDesc"
+        app:layout_constraintTop_toBottomOf="@+id/lblDesc" />
+
+    <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_32"
+        app:ccp_hideNameCode="true"
+        app:ccp_countryPreference="ES,US"
+        app:layout_constraintBottom_toBottomOf="@+id/edPhoneNumber"
+        app:layout_constraintEnd_toStartOf="@+id/edPhoneNumber"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edPhoneNumber" />
+
+    <EditText
+        android:id="@+id/edPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:ems="8"
+        android:imeOptions="actionDone"
+        android:inputType="phone"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblEnterPhone">
+
+    </EditText>
+
+    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_32"
+        android:text="@string/BTN_VERIFY"
+        android:paddingHorizontal="@dimen/dimen_54"
+        android:background="@drawable/btn_verify"
+        app:layout_constraintEnd_toEndOf="@+id/edPhoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/edPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/edPhoneNumber"
+        app:spinning_bar_padding="@dimen/dimen_6"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

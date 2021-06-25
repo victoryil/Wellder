@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#ffccbc</color>
+    <color name="p_light">#ffffee</color>
+    <color name="p_dark">#cb9b8c</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <!--Wellder colors-->
+    <color name="wellder_primary">#5C7CED</color>
+    <color name="wellder_primary1">#545AEE</color>
+    <color name="wellder_primary_chat">#7EA8BF</color>
+    <color name="wellder_primary_variant">#4B70F4</color>
+    <color name="wellder_secondary">#373636</color>
+    <color name="wellder_secondary1">#1EE49D</color>
+    <color name="wellder_secondary_variant">#6DCCA7</color>
+    <color name="wellder_dark_primary">#131B23</color>
+    <color name="wellder_dark_primary_variant">#373636</color>
+    <color name="wellder_dark_secondary">#99F7D3</color>
+    <color name="wellder_dark_secondary_variant">#6FDCB2</color>
+    <color name="wellder_card_grey">#E7E7E7</color>
+</resources>

@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Wellder</string>
+
+    <string-array name="themes">
+        <item>"classic"</item>
+        <item>"modern"</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register_help">Este nombre sera con el nombre que se le identificara en la aplicacion, que es obligatorio ponerlo. <br /> La foto por defecto es la que se muestra, la puede cambiar ahora, o tambien en cualquier otro momento desde los ajustes</string>
+    <string name="locus_rationale_title">Rationale Title</string>
+    <string name="locus_rationale_message">This is a rationale message.</string>
+    <string name="locus_permission_blocked_title">Permission Blocked Title</string>
+    <string name="locus_permission_blocked_message">This is a permission blocked message.</string>
+    <string name="locus_location_resolution_title">Permission Resolution Title</string>
+    <string name="locus_location_resolution_message">This is a permission resolution message.</string>
+    <string name="error_gps">esta es obligatoria para poder encontrar personas cerda de ti</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="channel_name">ESChannel</string>
+    <string name="channel_description">canal tv</string>
+    <string name="error_qr">pulse para intentarlo de nuevo</string>
+    <string name="profileSettings">profile_setting</string>
+    <string name="ttsmode">ttsmode</string>
+    <string name="accesibilityBtn">accesibilityBtn</string>
+    <string name="friendsFragmentName">Amistades</string>
+    <string name="FRIEND_NOTFOUND">No tienes amigos todavía</string>
+    <string name="ADD_FRIEND">Añadir amigos</string>
+    <string name="SEND_MESSAGE">Enviar mensaje</string>
+    <string name="CHAT_NOTFOUND">No hay chats todavía</string>
+    <string name="HINT_NAME">Nombre</string>
+    <string name="BTN_SAVE">Guardar</string>
+    <string name="BTN_CHANGE_PHOTO">Cambiar Foto</string>
+    <string name="BTN_ENABLE_GPS">Habilitar GPS</string>
+    <string name="TITLE_USERNAME">Nombre del usuario</string>
+    <string name="BTN_REGISTER">Registrar</string>
+    <string name="SEARCH_NOTFOUND">No hay más usuarios actualmente, por favor espere a los nuevos usuarios</string>
+    <string name="TITLE_VERIFY">Verificacion telefonica</string>
+    <string name="DESCRIPTION_VERIFY">Te enviaremos un mensaje con un codigo al numero indicado cual tendras que introducir en la siguiente pantalla</string>
+    <string name="TITLE_VERIFY_PHONE">Introduce tu numero telefonico</string>
+    <string name="BTN_VERIFY">Verificar</string>
+    <string name="DESCRIPTION_VERIFY_CODE">Introduce el codigo que se ha enviado para verificar tu cuenta</string>
+    <string name="TITLE_VERIFY_CODE">Introduce el codigo</string>
+    <string name="TITLE_CODE_NOTFOUND">¿No has recibido el codigo?</string>
+    <string name="TITLE_CODE_RESEND">Reenviar</string>
+    <string name="DESCRIPTION_SETTING_PROFILE">Qr, editar nombre y foto</string>
+    <string name="DESCRIPTION_SETTING_ACCESIBILITY">tamaño letra, modo lectura por voz</string>
+    <string name="DESCRIPTION_SETTING_THEME">cambiar temas de wellder</string>
+    <string name="DESCRIPTION_SETTING_BLOCK">listado de contactos bloqueados, Desbloqueo</string>
+    <string name="TITLE_SETTING_BLOCK">Bloqueado</string>
+    <string name="TITLE_SETTING_THEME">Tema</string>
+    <string name="TITLE_SETTING_ACCESIBILITY">Accesibilidad</string>
+    <string name="TITLE_SETTING_ACCESIBILITY_VOICEREADER">lectura por voz</string>
+    <string name="DESCRIPTION_SETTING_ACCESIBILITY_VOICEREADER">lee el mensaje al clicar en el</string>
+    <string name="TITLE_SETTING_ACCESIBILITY_TEXTSIZE">Tamaño letra</string>
+    <string name="TITLE_SETTING">Ajustes</string>
+    <string name="TAB_CHAT">Chats</string>
+    <string name="TAB_FRIENDS">Amistades</string>
+    <string name="TITLE_VERIFICATION">Verificacion</string>
+    <string name="LABEL_PROFILE">Perfil</string>
+    <string name="LABEL_BLOCK_USERS">Usuarios bloqueados</string>
+    <string name="LOGOUT_MESSAGE">"¿Estas seguro que quieres cerrar sesion? luego podrás conectarte de nuevo "</string>
+    <string name="TITLE_LOGOUT">Salir</string>
+    <string name="Cancel">Cancelar</string>
+    <string name="not_blocked_user">No hay usuarios bloqueados</string>
+</resources>
